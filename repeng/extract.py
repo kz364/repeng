@@ -184,7 +184,7 @@ def read_representations(
     inputs: list[DatasetEntry],
     hidden_layers: typing.Iterable[int] | None = None,
     batch_size: int = 32,
-    method: typing.Literal["pca_diff", "pca_center", "umap"] = "pca_diff",
+    method: typing.Literal["pca_diff", "pca_center", "umap"] = "pca_center",
 ) -> dict[int, np.ndarray]:
     """
     Extract the representations based on the contrast dataset.
